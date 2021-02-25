@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Inscription</h1>
+    <form action="">
+        <div>
+            <label for="nom">Nom:</label>
+            <input type="text" name="nom" id="nom" required>
+        </div>
+        <div>
+            <label for="pr">Prénom:</label>
+            <input type="text" name="pr" id="pr">
+        </div>
+        <div>
+            <label for="adr">Adresse:</label>
+            <textarea name="adr" id="adr" cols="20" rows="2"></textarea>
+        </div>
+        <div>
+            <label for="tel">Téléphone:</label>
+            <input type="tel" name="tel" id="tel">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            
+            <input type="button" name="sub" id="sub" onclick="ajouter()" value="Inscrivez-vous">
+        </div>
+    </form>
+    
+    <table id="tab">
+        <thead>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Téléphone</th>
+        </thead>
+        <tbody id="tb">
+
+        </tbody>
+        <tfoot>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Téléphone</th>
+        </tfoot>
+    </table>
+    <button></button>
+    <input type="button" value="imprimer" onclick="imp()" id="bt">
+    <script src="js.js"></script>
+</body>
+</html>
